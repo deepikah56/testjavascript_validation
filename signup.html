@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Signup</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="Signup.css">
+  <script type="text/javascript" src="Signup.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://static.hsappstatic.net/StyleGuideUI/static-3.140/img/sprocket/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://static.hsappstatic.net/StyleGuideUI/static-3.140/img/sprocket/favicon-16x16.png"><link rel="mask-icon" href="https://static.hsappstatic.net/StyleGuideUI/static-3.140/img/sprocket/safari-pinned-tab.svg" color="#FF7A59">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class = "container">
+	<div class="col-md-4">
+		<div class="sidedesign">
+		
+<p class="image-heading">HubSpot CRM is 100% free.
+Forever.<p></div>
+	</div>
+	<div class="col-md-offset-1 col-md-6">
+	<br>
+	<h5>Have an account?<span><a href="login.html"> Sign In</a></span></h5>
+
+		<p class="heading">Create your account</p>
+		<br>
+		<img class="google" src="https://static.hsappstatic.net/LoginUI/static-1.2563/img/google-logo.png">
+		<button class="facebook" type="button" class="btn btn-default">Sign in with Google</button>
+	<br><br><br>
+	<form method="POST">
+	<div class="row">
+	
+		<div class="col-md-6">
+		<div class="form-group">
+      <label for="email">First Name</label>
+      <input type="text" class="form-control" id="text" placeholder="Enter Firstname" name="email" onkeyup="validateText(this);">
+	  <span class="tick-icon" id="tick"><i class="fa fa-check" style="font-size:20px;"></i></span>
+	  <div class="private-form__meta"><div class="private-form__messages"><small id="firstname-validationMessage" ></small></div></div>
+	  
+    </div>
+		</div>
+		<div class="col-md-6">
+		<div class="form-group">
+      <label for="email">Last Name</label>
+      <input type="text" class="form-control" id="lastname" placeholder="Enter Lastname" name="email" onkeyup="validateLastText(this);">
+	  <span class="tick-icon" id="tick1"><i class="fa fa-check" style="font-size:20px;"></i></span>
+	  <div class="private-form__meta"><div class="private-form__messages"><small id="lastname-validationMessage" ></small></div></div>
+	  </div>
+	</div>
+	
+	</div>
+	<div class="row" style="margin-left:0px;margin-right:0px;">
+		<div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" onkeyup="validateEmail(this);" style="width:90%;">
+	  <span class="tick-icon email" id="tick2"><i class="fa fa-check" style="font-size:20px;"></i></span>
+	  <div class="private-form__meta"><div class="private-form__messages"><small id="username-validationMessage" ></small></div></div>
+    </div>
+	</div>
+	<div class="row" style="margin-left:0px;margin-right:0px;">
+		<div class="form-group">
+      <label for="pwd" >Password</label>
+	  <label for="pwd" class="show_password" onclick="myFunction()" id="show">Show Password</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" onkeyup="validatePassword(this);" style="width:90%;">
+	  <div class="private-form__meta"><div class="private-form__messages"><small id="password-validationMessage" ></small></div></div>
+	  
+	  <input type="radio" id="eight"> At least 8 characters long<br>
+	  <input type="radio" id="lowercase"> One lowercase character<br>
+	  <input type="radio" id="uppercase">  One uppercase character<br>
+	  <input type="radio" id="symbol">  One number, symbol, or whitespace character<br>
+    </div>
+	</div>
+	<br><br>
+	<button id = "viasubmit" class="submit" onclick="onSubmit()" type="button" class="btn btn-default" disabled="disabled">Get HubSpot CRM</button>
+	</form>
+	
+	<br>
+	<p>	By creating a HubSpot account, you're agreeing to accept the HubSpot terms of service.<p>
+	<hr>
+	<p>
+		We're committed to your privacy. HubSpot uses the information you provide to us to contact you about our relevant content, products, and services.You may unsubscribe from these communications at any time. For more information, check out our Privacy policy.<p>
+	</div>
+	
+	</div>
+	
+		
+  <br>
+</div>
+	</div>
+</body>
+</html>

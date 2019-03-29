@@ -1,0 +1,62 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	  <title>Log in</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" type="text/css" href="login.css">
+	  <script type="text/javascript" src="login.js"></script>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	  <link rel="icon" type="image/png" sizes="32x32" href="https://static.hsappstatic.net/StyleGuideUI/static-3.140/img/sprocket/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="https://static.hsappstatic.net/StyleGuideUI/static-3.140/img/sprocket/favicon-16x16.png"><link rel="mask-icon" href="https://static.hsappstatic.net/StyleGuideUI/static-3.140/img/sprocket/safari-pinned-tab.svg" color="#FF7A59">
+	</head>
+	<body>
+		<div class = "container">
+			<div class="loginform">
+				<img class="logo" src= "https://static.hsappstatic.net/salesImages/static-1.392/logos/hubspot-standard.svg">
+				<p class="register_link">Don't have an account?<span><a href="signup.html"> Sign up</a></span></p>
+			</div>
+			<div class="col-md-offset-3 col-md-6">
+				<form method="POST">
+	    		<div class="form-group">
+		      	<label for="email">Email address</label>
+		      	<input type="email" class="form-control" id="email" placeholder="Enter email" name="email" onkeyup="validateEmail(this);">
+			  		<div class="private-form__meta">	
+			  			<div class="private-form__messages">
+			  				<small id="username-validationMessage" ></small>
+			  			</div>
+			  		</div>
+	    		</div>
+	    		<div class="form-group">
+	      		<label for="pwd" >Password</label>
+		 				<label for="pwd" class="show_password" onclick="myFunction()" id="show">Show Password</label>
+	      		<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" onkeyup="validatePassword(this);">
+	  				<div class="private-form__meta">
+	  					<div class="private-form__messages">
+	  						<small id="password-validationMessage" ></small>
+	  					</div>
+	  				</div>
+	    		</div>
+					<span>Forgot my password</span>
+					<br>
+					<div class="checkbox">
+	      		<label><input type="checkbox" name="remember"> Remember me</label>
+	    		</div>
+					<br>
+	    		<button id = "submit" class="submit" type="submit" class="btn btn-default" disabled="disabled">Log in</button>
+					<br><hr>
+					<div>
+						<img class="google" src="https://static.hsappstatic.net/LoginUI/static-1.2563/img/google-logo.png">
+					</div>
+					<button class="facebook" type="button" class="btn btn-default">Sign in with Google</button>
+					<br><br>
+					<button class="sso" type="button" class="btn btn-default">Log in with SSO</button>
+	  		</form>
+	  			<br>
+	  			<footer class="copyright">©2019 HubSpot, Inc. All Rights Reserved.<br>Privacy Policy</i18n-string><span aria-label="Link opens in a new window" class="private-icon private-icon__low private-link--external__icon">externalLink</span></a></footer>
+			</div>
+		</div>
+	</body>
+	</html>
